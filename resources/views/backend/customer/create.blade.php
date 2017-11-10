@@ -10,7 +10,7 @@
 @endsection
 
 @section('content')
-{{ Form::open(['route' => 'admin.management.inventory.customer.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post']) }}
+{{ Form::open(['route' => 'admin.management.customer.store', 'class' => 'form-horizontal', 'role' => 'form', 'method' => 'post']) }}
 
 <div class="box box-success">
    <div class="box-header with-border">
@@ -23,51 +23,67 @@
 
    <div class="box-body">
       <div class="form-group">
-         {{ Form::label('name', trans('validation.attributes.backend.management.inventory.asset.name'), ['class' => 'col-lg-2 control-label']) }}
+         {{ Form::label('company_name', trans('validation.attributes.backend.management.inventory.customer.company_name'), ['class' => 'col-lg-2 control-label']) }}
 
          <div class="col-lg-10">
-            {{ Form::text('name', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.asset.name')]) }}
+            {{ Form::text('company_name', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.company_name')]) }}
          </div><!--col-lg-10-->
       </div><!--form control-->
 
       <div class="form-group">
-         {{ Form::label('serial_number', trans('validation.attributes.backend.management.inventory.asset.serial_number'),
+         {{ Form::label('email', trans('validation.attributes.backend.management.inventory.customer.email'),
          ['class' => 'col-lg-2 control-label']) }}
 
          <div class="col-lg-10">
-            {{ Form::text('serial_number', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.backend.management.inventory.asset.serial_number')]) }}
+         {{ Form::email('email', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.email')]) }}
          </div><!--col-lg-10-->
       </div><!--form control-->
 
       <div class="form-group">
-         {{ Form::label('eas_tag', trans('validation.attributes.backend.management.inventory.asset.eas_tag'), ['class' => 'col-lg-2 control-label']) }}
+         {{ Form::label('contact_person', trans('validation.attributes.backend.management.inventory.customer.contact_person'), ['class' => 'col-lg-2 control-label']) }}
 
          <div class="col-lg-10">
-            {{ Form::text('eas_tag', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.backend.management.inventory.asset.eas_tag')]) }}
+            {{ Form::text('contact_person', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.contact_person')]) }}
          </div><!--col-lg-10-->
       </div><!--form control-->
 
       <div class="form-group">
-         {{ Form::label('category', trans('validation.attributes.backend.management.inventory.asset.category'), ['class' => 'col-lg-2 control-label']) }}
+         {{ Form::label('contact_number', trans('validation.attributes.backend.management.inventory.customer.contact_number'), ['class' => 'col-lg-2 control-label']) }}
 
          <div class="col-lg-10">
-            {{ Form::text('category', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.asset.category')]) }}
+            {{ Form::text('contact_number', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.contact_number')]) }}
          </div><!--col-lg-10-->
       </div><!--form control-->
 
       <div class="form-group">
-         {{ Form::label('status', trans('validation.attributes.backend.management.inventory.asset.active'), ['class' => 'col-lg-2 control-label']) }}
+         {{ Form::label('alternative_number', trans('validation.attributes.backend.management.inventory.customer.alternative_number'), ['class' => 'col-lg-2 control-label']) }}
 
-         <div class="col-lg-1">
-            {{ Form::checkbox('status', '1', true, ['style' => 'margin: 12px 0 0;']) }}
-         </div><!--col-lg-1-->
+         <div class="col-lg-10">
+            {{ Form::text('alternative_number', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.alternative_number')]) }}
+         </div><!--col-lg-10-->
+      </div><!--form control-->
+
+      <div class="form-group">
+         {{ Form::label('address', trans('validation.attributes.backend.management.inventory.customer.address'), ['class' => 'col-lg-2 control-label']) }}
+
+         <div class="col-lg-10">
+            {{ Form::text('address', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.address')]) }}
+         </div><!--col-lg-10-->
+      </div><!--form control-->
+
+      <div class="form-group">
+         {{ Form::label('notes', trans('validation.attributes.backend.management.inventory.customer.notes'), ['class' => 'col-lg-2 control-label']) }}
+
+         <div class="col-lg-10">
+            {{ Form::text('notes', null, ['class' => 'form-control', 'maxlength' => '191', 'required' => 'required', 'autofocus' => 'autofocus', 'placeholder' => trans('validation.attributes.backend.management.inventory.customer.notes')]) }}
+         </div><!--col-lg-10-->
       </div><!--form control-->
    </div><!--box-->
 
    <div class="box box-info">
       <div class="box-body">
          <div class="pull-left">
-            {{ link_to_route('admin.management.inventory.asset.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-xs']) }}
+            {{ link_to_route('admin.management.customer.index', trans('buttons.general.cancel'), [], ['class' => 'btn btn-danger btn-xs']) }}
          </div><!--pull-left-->
 
          <div class="pull-right">
