@@ -17,6 +17,13 @@ return [
    'management' => [
       'inventory' => [
          'title'  => 'Inventory Management',
+         'customer' => [
+            'title' => 'Customer Management',
+            'all' => 'View Customer',
+            'create' => 'Create Customer',
+            'edit' => 'Edit Customer',
+            'deleted' => 'Deleted Customer',
+         ],
          'asset'  => [
             'title'  => 'Asset Management',
             'all'    => 'View Assets',

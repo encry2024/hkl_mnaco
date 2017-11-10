@@ -35,6 +35,24 @@ return [
       'management' => [
          'inventory' => [
             'title'  => 'Inventory Management',
+            'customer' => [
+               'title' => 'Customer Management',
+               'create' => 'Create Customer',
+               'edit' => 'Edit Customer',
+               'view' => 'View Customer',
+               'all' => 'All Customer',
+               'deleted' => 'Deleted Customer',
+
+               'table' => [
+                  'id' => 'ID',
+                  'company' => 'Company Name',
+                  'name' => 'Contact Person',
+                  'contact' => 'Contact Number',
+                  'created_at' => 'Date Created',
+                  'updated_at' => 'Last Updated',
+                  'actions' => 'Actions',
+               ],
+            ],
             'asset'  => [
                'title'  => 'Asset Management',
                'create' => 'Create Asset',
@@ -54,7 +72,7 @@ return [
                   'status'          => 'Asset Status',
                   'created_at'      => 'Date Created',
                   'updated_at'      => 'Last Updated',
-                  'actions'         => 'Actions'
+                  'actions'         => 'Actions',
                ],
 
                'tabs' => [

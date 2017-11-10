@@ -20,6 +20,13 @@ return [
 
       'management'   => [
          'inventory' => [
+            'customer' => [
+               'created' => 'created customer',
+               'deleted' => 'deleted customer',
+               'updated' => 'updated customer',
+               'restored' => 'restored customer',
+               'permanently_deleted' => 'permanently deleted customer',
+            ],
             'asset'  => [
                'created' => 'created asset',
                'deleted' => 'deleted asset',

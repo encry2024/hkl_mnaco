@@ -16,6 +16,13 @@ return [
    'backend' => [
       'management'   => [
          'inventory' => [
+            'customer' => [
+               'created' => 'Customer: customer was successfully created.',
+               'deleted' => 'Customer: customer was successfully deleted.',
+               'updated' => 'Customer: customer was successfully updated.',
+               'rested' => 'Customer: customer was succesfully restored.',
+               'deleted_permanently' => 'The customer was deleted permanently',
+            ],
             'asset' => [
                'created' => 'Asset :asset was successfully created.',
                'deleted' => 'Asset :asset was successfully deleted.',

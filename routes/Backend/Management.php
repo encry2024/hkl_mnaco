@@ -46,4 +46,20 @@ Route::group([
 
    });
 
+   Route::group([
+         'namespace' => 'Customer'
+      ], function() {
+         Route::post('customer/get', 'CustomerTableController')->name('customer.get');
+
+         Route::get('customer/deleted', 'CustomerStatusController@getDeleted')->name('customer.deleted');
+         //Route::get('customer/associate_assets', 'CustomerController@getAssociateAssets')->name('customer.associate_assets');
+
+         Route::resource('customer', 'CustomerController');
+
+         Route::group(['prefix' => 'customer/{deletedCustomer}'], function () {
+            Route::get('delete', 'CustomerStatusController@delete')->name('customer.delete-permanently');
+            Route::get('restore', 'CustomerStatusController@restore')->name('customer.restore');
+         });
+      });
+
 });

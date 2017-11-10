@@ -121,6 +121,11 @@ return [
       'backend' => [
          'management'   => [
             'inventory' => [
+               'customer' => [
+                  'company_name' => 'Company Name',
+                  'contact_person' => 'Contact Person',
+                  'contact_number' => 'Contact Number',
+               ],
                'asset'  => [
                   'name'            => 'Name',
                   'serial_number'   => 'Serial Number',

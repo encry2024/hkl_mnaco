@@ -16,6 +16,10 @@ return [
    'backend' => [
       'management' => [
          'inventory'  => [
+            'customer' => [
+               'restore_customer' => 'Restore Customer',
+               'delete_permanently' => 'Delete Permanently',
+            ],
             'asset'   => [
                'restore_asset'       => 'Restore Asset',
                'delete_permanently'  => 'Delete Permanently'

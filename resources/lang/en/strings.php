@@ -16,6 +16,11 @@ return [
    'backend' => [
       'management'   => [
          'inventory' => [
+            'customer' => [
+               'delete_customer_confirm' => 'Are you sure you want to delete this asset permanently? Anywhere in the application that references this asset\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+               'if_confirmed_off' => '(If confirmed is off)',
+               'restore_customer_confirm' => 'Restore this asset to its original state?',
+            ],
             'asset'  => [
                'delete_asset_confirm'  => 'Are you sure you want to delete this asset permanently? Anywhere in the application that references this asset\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
                'if_confirmed_off'     => '(If confirmed is off)',

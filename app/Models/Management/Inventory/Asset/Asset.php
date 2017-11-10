@@ -5,7 +5,6 @@ namespace App\Models\Management\Inventory\Asset;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use App\Models\Management\Inventory\Asset\Traits\Scope\AssetScope;
-use App\Models\Management\Inventory\Asset\Traits\AssetSendPasswordReset;
 use App\Models\Management\Inventory\Asset\Traits\Attribute\AssetAttribute;
 use App\Models\Management\Inventory\Asset\Traits\Relationship\AssetRelationship;
 

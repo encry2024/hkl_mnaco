@@ -39,6 +39,14 @@
                </a>
             </li>
 
+            <li class="{{ active_class(Active::checkUriPattern('admin/management/customer')) }}">
+               <a href="{{ route('admin.management.customer.index') }}">
+               <i class="fa fa-code-fork"></i>
+               <span>Customer Management</span>
+               </a>
+            </li>
+
+
             <li class="header">{{ trans('menus.backend.sidebar.system') }}</li>
 
             @role(1)
