@@ -33,30 +33,28 @@
 
          <div class="row"> 
             <div class="col-lg-9">
-               <h3 style="margin-left: 37rem">PURCHASE REQUEST FORM</h3>
+               <h3 style="margin-left: 37rem">PULL-OUT REQUEST FORM</h3>
             </div>
             <div class="col-lg-3" style="border-style: groove">
-               <label>Invoice #:</label>
-               <label><font color="red">asdasdas</font></label>
+               <label><font color="red">NO.:</font></label>
+               <label><font color="red"></font></label>
             </div>
          </div>
 
          <div class="row">
-            <div class="col-lg-6"><label>Supplier: </label></div>
+            <div class="col-lg-6"><label>Project: </label></div>
             <div class="col-lg-6"><label>Date: </label></div>
          </div>
          <div class="row">
             <div class="col-lg-6"><label>Address: </label></div>
-            <div class="col-lg-6"><label>Project: </label></div>
       </div>
       <br><br>
       <table class="table">
          <thead>
-            <th>Model</th>
-            <th>Qty</th>
-            <th>Item Description</th>
-            <th>Unit Price</th>
+            <th>Expense</th>
             <th>Amount</th>
+            <th>Purpose</th>
+            <th>Receipt (Y/N)</th>
          </thead>
          <tbody>
             <tr>
@@ -84,7 +82,8 @@
       </div>
 
       <div class="row" style="border-style: groove">
-      <div class="col-lg-12"><label>"TWO (2) DAY LEAD TIME FOR PURCHASE REQUESTS"</label></div>
+      <div class="col-lg-12"><label><i>"FAILURE TO RETURN IN WORKING CONDITION SHALL BE FOR THE ACCOUNT OF THE REQUESTOR"</i></label></div>
+      <div class="col-lg-12"><label><i>"FAILURE TO RETURN REQUESTED ITEMS SHALL BE FOR THE ACCOUNT OF THE REQUESTOR"</i></label></div>
 
   
 

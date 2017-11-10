@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Backend\Form\Purchase;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class FormController extends Controller
+class PurchaseController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,7 +14,7 @@ class FormController extends Controller
      */
     public function index()
     {
-        return view('backend.forms.request.purchaserequestform');
+        return view('backend.forms.request.purchase');
     }
 
     /**

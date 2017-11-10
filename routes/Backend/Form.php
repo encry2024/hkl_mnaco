@@ -10,7 +10,7 @@ Route::group([
       'namespace' => 'Purchase'
 
    ], function()  {
-      Route::resource('purchase', 'FormController');
+      Route::resource('purchase', 'PurchaseController');
    });
 
 });
