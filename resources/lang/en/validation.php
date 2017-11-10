@@ -122,10 +122,15 @@ return [
          'management'   => [
             'inventory' => [
                'customer' => [
-                  'company_name' => 'Company Name',
-                  'contact_person' => 'Contact Person',
-                  'contact_number' => 'Contact Number',
+                  'company_name'    => 'Company Name',
+                  'contact_person'  => 'Contact Person',
+                  'contact_number'  => 'Contact Number',
+                  'alternative_number' => 'Alternative Number',
+                  'email'           => 'E-mail',
+                  'address'         => 'Address',
+                  'notes'           => 'Notes'
                ],
+
                'asset'  => [
                   'name'            => 'Name',
                   'serial_number'   => 'Serial Number',
