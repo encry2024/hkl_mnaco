@@ -41,7 +41,7 @@
 
             <li class="{{ active_class(Active::checkUriPattern('admin/management/customer')) }}">
                <a href="{{ route('admin.management.customer.index') }}">
-               <i class="fa fa-code-fork"></i>
+               <i class="fa fa-users"></i>
                <span>Customer Management</span>
                </a>
             </li>
