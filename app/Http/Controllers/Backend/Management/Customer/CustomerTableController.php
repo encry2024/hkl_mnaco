@@ -14,7 +14,7 @@ class CustomerTableController extends Controller
 {
 
    /**
-   * @var CustomerRepository    
+   * @var CustomerRepository
    */
    protected $customers;
 
@@ -34,6 +34,7 @@ class CustomerTableController extends Controller
    public function __invoke(ManageCustomerRequest $request)
    {
       return Datatables::of($this->customers->getForDataTable($request->get('trashed')))
+      ->escapeColumns(['name'])
       ->addColumn('actions', function ($model) {
          return $model->action_buttons;
       })
