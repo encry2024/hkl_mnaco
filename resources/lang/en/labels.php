@@ -37,22 +37,48 @@ return [
             'title'  => 'Inventory Management',
             'customer' => [
                'title' => 'Customer Management',
-               'create' => 'Create Customer',
-               'edit' => 'Edit Customer',
-               'view' => 'View Customer',
-               'all' => 'All Customer',
-               'deleted' => 'Deleted Customer',
+
+               'availables'   => 'Customer List',
+
+               'create'    => 'Create Customer',
+               'edit'      => 'Edit Customer',
+               'view'      => 'View Customer',
+               'all'       => 'All Customer',
+               'deleted'   => 'Deleted Customer',
 
                'table' => [
-                  'id' => 'ID',
-                  'company' => 'Company Name',
-                  'name' => 'Contact Person',
-                  'contact' => 'Contact Number',
-                  'created_at' => 'Date Created',
-                  'updated_at' => 'Last Updated',
-                  'actions' => 'Actions',
+                  'id'                 => 'ID',
+                  'company_name'       => 'Company Name',
+                  'contact_person'     => 'Contact Person',
+                  'contact_number'     => 'Contact Number',
+                  'alternative_number' => 'Alternative Number',
+                  'email'              => 'E-mail',
+                  'address'            => 'Address',
+                  'notes'              => 'Notes',
+                  'created_at'         => 'Date Added',
+                  'updated_at'         => 'Last Updated'
+               ],
+
+               'tabs' => [
+                  'titles' => [
+                     'overview' => 'Overview',
+                     'history'  => 'History',
+                  ],
+
+                  'content' => [
+                     'overview' => [
+                        'name'            => 'Name',
+                        'type'            => 'Asset Type',
+                        'serial_number'   => 'Serial Number',
+                        'eas_tag'         => 'ExcelAsia Tag',
+                        'status'          => 'Asset Status',
+                        'created_at'      => 'Date Created',
+                        'updated_at'      => 'Last Updated'
+                     ],
+                  ],
                ],
             ],
+
             'asset'  => [
                'title'  => 'Asset Management',
                'create' => 'Create Asset',
@@ -84,12 +110,13 @@ return [
                   'content' => [
                      'overview' => [
                         'name'            => 'Name',
-                        'type'            => 'Asset Type',
+                        'category'        => 'Asset Category',
                         'serial_number'   => 'Serial Number',
                         'eas_tag'         => 'ExcelAsia Tag',
                         'status'          => 'Asset Status',
                         'created_at'      => 'Date Created',
-                        'updated_at'      => 'Last Updated'
+                        'updated_at'      => 'Last Updated',
+                        'actions'         => 'Actions',
                      ],
                   ],
                ],
