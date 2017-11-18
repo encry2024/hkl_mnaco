@@ -44,6 +44,7 @@ class EventServiceProvider extends ServiceProvider
       \App\Listeners\Backend\Management\Inventory\Asset\AssetEventListener::class,
       \App\Listeners\Backend\Management\Inventory\Category\CategoryEventListener::class,
       \App\Listeners\Backend\Management\Customer\CustomerEventListener::class,
+      \App\Listeners\Backend\Request\Form\Liquidation\LiquidationEventListener::class,
    ];
 
    /**
