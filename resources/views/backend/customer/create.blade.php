@@ -17,7 +17,7 @@
       <h3 class="box-title">{{ trans('labels.backend.management.inventory.customer.create') }}</h3>
 
       <div class="box-tools pull-right">
-         @include('backend.management.inventory.asset.includes.partials.asset-header-buttons')
+         @include('backend.customer.includes.partials.customer-header-buttons')
       </div><!--box-tools pull-right-->
    </div><!-- /.box-header -->
 
