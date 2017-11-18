@@ -29,6 +29,9 @@ mix.sass('resources/assets/sass/frontend/app.scss', 'public/css/frontend.css')
    .js([
       'resources/views/backend/management/inventory/asset/js/asset-scripts.js'
    ], 'public/js/backend/management/inventory/asset/scripts.js')
+   .js([
+      'resources/views/backend/request/form/liquidation/js/create.js'
+   ], 'public/js/backend/request/form/liquidation/scripts.js')
    .webpackConfig({
       plugins: [
             new WebpackRTLPlugin('/css/[name].rtl.css')
