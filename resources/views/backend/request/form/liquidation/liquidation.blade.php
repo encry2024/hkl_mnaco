@@ -31,7 +31,7 @@
                <br><label class="col-lg-offset-2">www.excelasiasolutions.com</label>
          </div>
 
-         <div class="row"> 
+         <div class="row">
             <div class="col-lg-9">
                <h3 style="margin-left: 37rem">LIQUIDATION FORM</h3>
             </div>
@@ -76,14 +76,14 @@
          <div class="col-lg-12"><label>Prepared By: </label></div>
       </div>
 
-      <div class="row" style="border-style: groove"> 
+      <div class="row" style="border-style: groove">
          <div class="col-lg-12"><label>Apprvoed By: </label></div>
       </div>
 
       <div class="row" style="border-style: groove">
       <div class="col-lg-12"><label><i>"NO RECEIPT PROVIDED SHALL BE FOR THE ACCOUNT OF THE EMPLOYEE"</i></label></div>
 
-  
+
 
    </div><!-- /.box-body -->
 </div><!--box-->
