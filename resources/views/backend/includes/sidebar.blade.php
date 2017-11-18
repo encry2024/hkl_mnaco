@@ -23,6 +23,30 @@
                </a>
             </li>
 
+            <li class="{{ active_class(Active::checkUriPattern('admin/log-viewer*')) }} treeview">
+               <a href="#">
+                  <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                  <span>{{ trans('menus.backend.sidebar.form') }}</span>
+                  <i class="fa fa-angle-left pull-right"></i>
+               </a>
+
+               <ul class="treeview-menu {{ active_class(Active::checkUriPattern('admin/request/form/liquidation*'), 'menu-open') }}" style="display: none; {{ active_class(Active::checkUriPattern('admin/request/form/liquidation*'), 'display: block;') }}">
+                  <li class="{{ active_class(Active::checkUriPattern('admin/request/form/liquidation*')) }}">
+                     <a href="{{ route('admin.request.form.liquidation.index') }}">
+                        <i class="fa fa-circle-o"></i>
+                        <span>{{ trans('menus.backend.request.form.liquidation.title') }}</span>
+                     </a>
+                  </li>
+
+                  <li class="{{ active_class(Active::checkUriPattern('admin/log-viewer/logs')) }}">
+                     <a href="{{ route('log-viewer::logs.list') }}">
+                        <i class="fa fa-circle-o"></i>
+                        <span>{{ trans('menus.backend.log-viewer.logs') }}</span>
+                     </a>
+                  </li>
+               </ul>
+            </li>
+
             <li class="header">{{ trans('menus.backend.management.inventory.title') }}</li>
 
             <li class="{{ active_class(Active::checkUriPattern('admin/management/inventory/asset')) }}">
