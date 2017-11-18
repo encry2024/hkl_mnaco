@@ -14,6 +14,18 @@ return [
    */
 
    'backend' => [
+      'request' => [
+         'form' => [
+            'liquidation' => [
+               'created' => 'Liquidation project :liquidation was successfully created.',
+               'deleted' => 'Liquidation project :liquidation was successfully deleted.',
+               'updated' => 'Liquidation project :liquidation was successfully updated.',
+               'rested' => 'Liquidation project :liquidation was succesfully restored.',
+               'deleted_permanently' => 'The liquidation form was deleted permanently',
+            ]
+         ]
+      ],
+
       'management'   => [
          'inventory' => [
             'customer' => [

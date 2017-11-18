@@ -18,6 +18,18 @@ return [
       'none_for_entity' => 'There is no history for this :entity.',
       'recent_history'  => 'Recent History',
 
+      'request' => [
+         'form' => [
+            'liquidation' => [
+               'created' => 'created Liquidation Form',
+               'deleted' => 'deleted Liquidation Form',
+               'updated' => 'updated Liquidation Form',
+               'restored' => 'restored Liquidation Form',
+               'permanently_deleted' => 'permanently deleted Liquidation Form',
+            ]
+         ]
+      ],
+
       'management'   => [
          'inventory' => [
             'customer' => [

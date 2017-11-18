@@ -32,6 +32,63 @@ return [
    ],
 
    'backend' => [
+      'request' => [
+         'form' => [
+            'liquidation'  => [
+               'title'  => 'Request Form - Liquidation Form',
+
+               'list'   => 'Liquidation Form List',
+
+               'create' => 'Create Liquidation Form',
+               'edit'   => 'Edit Liquidation Form',
+               'delete' => 'Deleted Liquidation Form',
+               'view'   => 'View all Liquidation Form',
+
+               'table' => [
+                  'id'           => 'ID',
+                  'project'      => 'Project',
+                  'date'         => 'Date',
+                  'amount_provided' => 'Amount Provided',
+                  'prepared_by'  => 'Prepared By',
+                  'approved_by'  => 'Approved By',
+                  'created_at'   => 'Date Added',
+                  'updated_at'   => 'Last Updated'
+               ],
+
+               'tabs' => [
+                  'titles' => [
+                     'overview' => 'Overview',
+                     'history'  => 'History',
+                  ],
+
+                  'content' => [
+                     'overview' => [
+                        'id'           => 'ID',
+                        'project'      => 'Project',
+                        'date'         => 'Date',
+                        'amount_provided' => 'Amount Provided',
+                        'prepared_by'  => 'Prepared By',
+                        'approved_by'  => 'Approved By',
+                        'created_at'   => 'Date Added',
+                        'updated_at'   => 'Last Updated'
+                     ],
+                  ],
+               ],
+
+               'form'   => [
+                  'table' => [
+                     'date'         => 'Date',
+                     'amount'       => 'Amount',
+                     'purpose'      => 'Purpose',
+                     'receipt'      => 'Receipt(Y/N)',
+                     'created_at'   => 'Date Added',
+                     'updated_at'   => 'Last Updated'
+                  ],
+               ]
+            ]
+         ]
+      ],
+
       'management' => [
          'inventory' => [
             'title'  => 'Inventory Management',

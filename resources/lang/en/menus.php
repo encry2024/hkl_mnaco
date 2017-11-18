@@ -14,6 +14,19 @@ return [
 */
 
 'backend' => [
+   'request' => [
+      'form' => [
+         'liquidation'  => [
+            'title'  => 'Liquidation Form',
+
+            'all'       => 'Requested Liquidation Form',
+            'create'    => 'Create Liquidation Form',
+            'edit'      => 'Edit Liquidation Form',
+            'deleted'   => 'Deleted Liquidation Form'
+         ]
+      ]
+   ],
+
    'management' => [
       'inventory' => [
          'title'  => 'Inventory Management',
@@ -75,6 +88,7 @@ return [
 
    'sidebar' => [
       'dashboard' => 'Dashboard',
+      'form'      => 'Request Forms',
       'management'=> [
          'inventory' => [
             'asset'  => 'Asset Management',

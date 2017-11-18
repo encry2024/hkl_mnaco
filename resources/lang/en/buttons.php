@@ -14,6 +14,15 @@ return [
    */
 
    'backend' => [
+      'request' => [
+         'form' => [
+            'liquidation' => [
+               'restore_liquidation' => 'Restore Liquidation Form Request',
+               'delete_permanently' => 'Delete Liquidation Form Request permanently'
+            ]
+         ]
+      ],
+
       'management' => [
          'inventory'  => [
             'customer' => [

@@ -14,6 +14,16 @@ return [
    */
 
    'backend' => [
+      'request' => [
+         'form' => [
+            'liquidation' => [
+               'delete_liquidation_confirm' => 'Are you sure you want to delete this liquidation request form permanently? Anywhere in the application that references this liquidation request form\'s id will most likely error. Proceed at your own risk. This can not be un-done.',
+               'if_confirmed_off' => '(If confirmed is off)',
+               'restore_liquidation_confirm' => 'Restore this liquidation request form to its original state?',
+            ]
+         ]
+      ],
+
       'management'   => [
          'inventory' => [
             'customer' => [

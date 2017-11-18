@@ -117,8 +117,18 @@ return [
    */
 
    'attributes' => [
-
       'backend' => [
+         'request' => [
+            'form' => [
+               'liquidation' => [
+                  'project'      => 'Project',
+                  'prepared_by'  => 'Prepared By',
+                  'date'         => 'Date Prepared',
+                  'amount_provided' => 'Amount Provided',
+               ]
+            ]
+         ],
+
          'management'   => [
             'inventory' => [
                'customer' => [

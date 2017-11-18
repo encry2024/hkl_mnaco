@@ -14,6 +14,16 @@ return [
    */
 
    'backend' => [
+      'request' => [
+         'form' => [
+            'liquidation' => [
+               'create_error'      => 'There was a problem creating this Liquidation Form. Please try again.',
+               'delete_error'      => 'There was a problem deleting this Liquidation Form. Please try again.',
+               'update_error'      => 'There was a problem updating this Liquidation Form. Please try again.',
+            ]
+         ]
+      ],
+
       'management'   => [
          'inventory' => [
             'customer' => [
@@ -22,6 +32,7 @@ return [
                'delete_error'      => 'There was a problem deleting this asset. Please try again.',
                'update_error'      => 'There was a problem updating this asset. Please try again.',
             ],
+
             'asset'  => [
                'already_exists'    => 'Asset :asset already exists. Please choose a different name.',
                'create_error'      => 'There was a problem creating this asset. Please try again.',
